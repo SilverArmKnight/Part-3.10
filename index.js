@@ -3,7 +3,7 @@ const morgan = require('morgan')
 const app = express() 
 
 morgan.token('body', function getBody(request) {
-  return JSON.stringify(request.body) 
+  return JSON.stringify(request.body)
 })
 
 app.use(express.json())
